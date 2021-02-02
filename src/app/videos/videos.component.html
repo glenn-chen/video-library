@@ -1,0 +1,56 @@
+<body style="background-color:#292929">
+  <br>
+  <div class="scrollmenu">
+    <h2 class="videocategory">Category 1</h2>
+    <ul>
+      <li *ngFor="let video of videos" style="display: inline-block">
+        <div class="dynamic">
+          <a routerLink="/play/{{video.id}}">
+            <img class="thumbnail" src="../../assets/thumbnail{{video.id}}.jpg">
+            <h4 class="thumbnail-text">{{video.name}} ({{video.year}})</h4>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!--scrollmenu repeated 3 more times-->
+  <div class="scrollmenu">
+    <h2 class="videocategory">Category 2</h2>
+    <ul>
+      <li *ngFor="let video of videos" style="display: inline-block">
+        <div class="dynamic">
+          <a routerLink="/play/{{video.id}}">
+            <img class="thumbnail" src="../../assets/thumbnail{{video.id}}.jpg">
+            <h4 class="thumbnail-text">{{video.name}} ({{video.year}})</h4>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="scrollmenu">
+    <h2 class="videocategory">Category 3</h2>
+    <ul>
+      <li *ngFor="let video of videos" style="display: inline-block">
+        <div class="dynamic">
+          <a routerLink="/play/{{video.id}}">
+            <img class="thumbnail" src="../../assets/thumbnail{{video.id}}.jpg">
+            <h4 class="thumbnail-text">{{video.name}} ({{video.year}})</h4>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="scrollmenu">
+    <h2 class="videocategory">Category 4</h2>
+    <ul>
+      <li *ngFor="let video of videos" style="display: inline-block">
+        <div class="dynamic">
+          <a routerLink="/play/{{video.id}}">
+            <img class="thumbnail" src="../../assets/thumbnail{{video.id}}.jpg">
+            <h4 class="thumbnail-text">{{video.name}} ({{video.year}})</h4>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>

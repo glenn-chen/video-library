@@ -1,0 +1,26 @@
+div.header {
+    background-color: #1d1d1d;
+    padding: 8px;
+}
+div.header h1{
+    color: #f8f8ff;
+    text-align: center;
+    display: inline;
+    padding: 5px;
+    margin-left: 30px;
+}
+div.header a {
+    color: #f8f8ff;
+    text-align: center;
+    display: inline;
+    padding: 5px;
+    text-decoration: none;
+}
+div.header a:hover {
+    background-color: #3d3d3d;
+}
+
+a {
+    display: inline;
+    text-align: center;
+}

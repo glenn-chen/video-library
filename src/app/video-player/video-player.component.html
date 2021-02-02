@@ -1,0 +1,44 @@
+<body style="background: #333">
+    <br>
+    <h2 class="title">{{video.name}} ({{video.year}})</h2>
+    <div *ngIf="video" class="container">
+        <div class="vid-container" id="videocontainer" style="text-align: center;">
+            <video class="video" src = "../../assets/curry.mp4"></video>
+            <div class="controls">
+                <div class="progress-bar">
+                    <div class="progress-filled">
+    
+                    </div>
+                    <div class="buttons">
+                        <button mat-icon-button id="play" (click)="playButtonClick()"
+                        color="primary" aria-label="play button">
+                            <mat-icon id="playicon">play_arrow</mat-icon>
+                            <mat-icon id="pauseicon" style="display: none">pause</mat-icon>
+                        </button> 
+                        <button mat-icon-button id="mute-unmute" (click)="muteButtonClick()"
+                        color="primary" aria-label="mute button">
+                            <mat-icon id="volumeupicon">volume_up</mat-icon>
+                            <mat-icon id="volumeofficon" style="display: none">volume_off</mat-icon>
+                        </button>
+                        
+                        <button mat-icon-button id="backward" (click)="backwardButtonClick()"
+                        color="primary" aria-label="backward button">
+                            <mat-icon>replay_5</mat-icon>
+                        </button>
+                        <button mat-icon-button id="forward" (click)="forwardButtonClick()"
+                        color="primary" aria-label="forward button">
+                            <mat-icon>forward_5</mat-icon>
+                        </button>
+                        <button mat-icon-button id="fullscreen" (click)="fullscreenButtonClick()"
+                        color="primary" aria-label="fullscreen button">
+                            <mat-icon id="fullscreenicon">fullscreen</mat-icon>
+                            <mat-icon id="fullscreenexiticon" style="display: none">fullscreen_exit</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="../../video-player-script.js"></script>
+</body>

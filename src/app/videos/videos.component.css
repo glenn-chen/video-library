@@ -1,0 +1,40 @@
+div.scrollmenu {
+    background-color: #292929;
+    overflow: auto;
+    white-space: nowrap;
+}
+  
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    text-decoration: none;
+}
+  
+.dynamic:hover a {
+    background-color: #808080;
+    padding:5px;
+}
+.dynamic:hover img.thumbnail {
+    width: 350px;
+}
+.dynamic:hover h4.thumbnail-text {
+    display: block;
+}
+
+h2.videocategory {
+    color: #f8f8ff;
+    margin-left: 45px;
+}
+
+h1.title {
+    color: #f8f8ff;
+    text-align: center;
+}
+
+h4.thumbnail-text {
+    color: white;
+    text-align: center;
+    display: none
+}
